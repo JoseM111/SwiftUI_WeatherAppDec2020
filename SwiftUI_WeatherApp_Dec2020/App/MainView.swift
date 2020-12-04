@@ -19,7 +19,6 @@ struct MainView: View {
     //∆..............................
     /// ∆ @State source of truth
     @State var darkMode: Bool = false
-    var forecast = Forecast()
     //∆..............................
     
     var body: some View {
@@ -50,9 +49,9 @@ struct MainView: View {
                 ///∆ ........... Child HStack ...........
                 HStack(spacing: 20) {
                     ///∆..................................
-                    ForEach((0...3), id: \.self) { day in
+                    ForEach((0...4), id: \.self) { day in
                         //∆..........
-                        forecast.weeklyForecast[day]
+                        Forecast.weeklyForecast[day]
                     }
                 }// ∆ END HStack
                 
