@@ -1,6 +1,6 @@
 import SwiftUI
 
-class Forecast {
+struct Forecast {
     // MARK: - ∆@PROPERTIES
     //∆..............................
     //∆..........
